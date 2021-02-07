@@ -23,6 +23,11 @@ public class CreateAnAccountPage extends BasePage {
 
     public void withValidCredentials(){
 
+        /*
+        Faker java class allows us to create random emails.
+        we won't need to define any new emails for every run.
+         */
+
         Faker faker = new Faker();
         String emailAddress= faker.internet().emailAddress();
 

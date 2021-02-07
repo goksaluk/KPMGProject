@@ -3,8 +3,6 @@ package com.kpmg.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import javax.swing.text.html.CSS;
-
 public class AccountCreatedPage extends BasePage {
 
     @FindBy(css = "[data-test='page-heading']")
@@ -43,7 +41,7 @@ public class AccountCreatedPage extends BasePage {
     @FindBy(css = "[for='termsConditions']")
     public WebElement termsConditions;
 
-    @FindBy(id = "myJohnLewisAddressForm")
+    @FindBy(xpath = "//button[text()='Join for free']")
     public WebElement joinForFreeButton2;
 
 

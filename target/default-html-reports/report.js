@@ -2,7 +2,90 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "name": "KPMG Scenarios",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@kpmg"
+    }
+  ]
+});
+formatter.scenarioOutline({
+  "name": "Positive scenario one",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "hover to \"\u003ctypeNameOfProduct\u003e\" module",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "the user selects for \"\u003cproduct\u003e\" product",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "then the user navigates to shampoo page and see the part of page subtitle as \"\u003cpartOfpageSubtitle\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "the user clicks particular product\u0027s name start with \"\u003cpartNameOfParticularProduct\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "reaches the quantity page named \"\u003cpasticularProductPageSubtitle\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "the user select size for product",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "clicks plus sign",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "adds to basket",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "goes to basket",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "finally the user reach to basket page and see page subtitle as \"BASKET\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "but the user remove this product",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "the user able to see that basket is empty",
+  "keyword": "And "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "typeNameOfProduct",
+        "product",
+        "partOfpageSubtitle",
+        "partNameOfParticularProduct",
+        "pasticularProductPageSubtitle"
+      ]
+    },
+    {
+      "cells": [
+        "Electricals",
+        "Kettles",
+        "KETTLES",
+        "Dualit Dom",
+        "Dualit Dome Kettle, Black/Steel"
+      ]
+    }
+  ]
 });
 formatter.background({
   "name": "Homepage",
@@ -23,11 +106,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user on the home page",
+  "name": "the user able to see page title as \"John Lewis \u0026 Partners | Homeware, Fashion, Electricals \u0026 More\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "KPMGStepDefinitions.the_user_on_the_home_page()"
+  "location": "KPMGStepDefinitions.theUserAbleToSeePageTitleAs(String)"
 });
 formatter.result({
   "status": "passed"
@@ -43,11 +126,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user is on the sign in page",
+  "name": "the user able to see the sign in page subtitle as \"SIGN IN\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "KPMGStepDefinitions.the_user_is_on_the_sign_in_page()"
+  "location": "KPMGStepDefinitions.theUserAbleToSeeTheSignInPageSubtitleAs(String)"
 });
 formatter.result({
   "status": "passed"
@@ -93,11 +176,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user navigate to account created page",
+  "name": "the user navigate to account created page and see page subtitle as \"ACCOUNT CREATED\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "KPMGStepDefinitions.the_user_navigate_to_account_created_page()"
+  "location": "KPMGStepDefinitions.theUserNavigateToAccountCreatedPageAndSeePageSubtitleAs(String)"
 });
 formatter.result({
   "status": "passed"
@@ -111,16 +194,6 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
-});
-formatter.scenario({
-  "name": "Positive scenario",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@kpmg"
-    }
-  ]
 });
 formatter.step({
   "name": "the user insert all valid information on the form",
@@ -153,11 +226,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user navigate to welcome page",
+  "name": "the user navigate to welcome page and see page subtitle as \"WELCOME\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "KPMGStepDefinitions.the_user_navigate_to_welcome_page()"
+  "location": "KPMGStepDefinitions.theUserNavigateToWelcomePageAndSeePageSubtitleAs(String)"
 });
 formatter.result({
   "status": "passed"
@@ -173,17 +246,27 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user reach to main products page",
-  "keyword": "Then "
+  "name": "the user able to see page title as \"John Lewis \u0026 Partners | Homeware, Fashion, Electricals \u0026 More\"",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "KPMGStepDefinitions.the_user_reach_to_main_products_page()"
+  "location": "KPMGStepDefinitions.theUserAbleToSeePageTitleAs(String)"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Positive scenario one",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@kpmg"
+    }
+  ]
+});
 formatter.step({
-  "name": "hover to \"Beauty\" module",
+  "name": "hover to \"Electricals\" module",
   "keyword": "And "
 });
 formatter.match({
@@ -193,47 +276,47 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user selects for shampoo product",
+  "name": "the user selects for \"Kettles\" product",
   "keyword": "And "
 });
 formatter.match({
-  "location": "KPMGStepDefinitions.the_user_selects_for_shampoo_product()"
+  "location": "KPMGStepDefinitions.the_user_selects_for_product(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "then the user navigates to shampoo page",
+  "name": "then the user navigates to shampoo page and see the part of page subtitle as \"KETTLES\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "KPMGStepDefinitions.then_the_user_navigates_to_shampoo_page()"
+  "location": "KPMGStepDefinitions.thenTheUserNavigatesToShampooPageAndSeePageSubtitleAs(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks Aveda Shampure",
+  "name": "the user clicks particular product\u0027s name start with \"Dualit Dom\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "KPMGStepDefinitions.the_user_clicks_Aveda_Shampure()"
+  "location": "KPMGStepDefinitions.the_user_clicks_Particular_Product_start_with(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "reaching to quantity page",
+  "name": "reaches the quantity page named \"Dualit Dome Kettle, Black/Steel\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "KPMGStepDefinitions.reaching_to_quantity_page()"
+  "location": "KPMGStepDefinitions.reachesTheQuantityPageNamed(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user select size for aveda shapure",
+  "name": "the user select size for product",
   "keyword": "And "
 });
 formatter.match({
@@ -273,11 +356,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "finally the user reach to basket page",
+  "name": "finally the user reach to basket page and see page subtitle as \"BASKET\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "KPMGStepDefinitions.finally_the_user_reach_to_basket_page()"
+  "location": "KPMGStepDefinitions.finallyTheUserReachToBasketPageAndSeePageSubtitleAs(String)"
 });
 formatter.result({
   "status": "passed"

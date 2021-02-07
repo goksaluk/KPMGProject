@@ -3,6 +3,9 @@ package com.kpmg.utilities;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+
+// This class provide us to reach configuration.properties file
+
 public class ConfigurationReader {
 
     private static Properties properties;

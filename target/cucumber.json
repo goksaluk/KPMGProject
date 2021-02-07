@@ -1,9 +1,9 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
+        "line": 4,
         "name": "Homepage",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 307056524,
+              "duration": 252181645,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "the user allows all cokies",
             "match": {
               "location": "KPMGStepDefinitions.the_user_allows_all_cokies()"
@@ -23,22 +23,28 @@
           },
           {
             "result": {
-              "duration": 28345348,
+              "duration": 14152048,
               "status": "passed"
             },
-            "line": 5,
-            "name": "the user on the home page",
+            "line": 6,
+            "name": "the user able to see page title as \"John Lewis \u0026 Partners | Homeware, Fashion, Electricals \u0026 More\"",
             "match": {
-              "location": "KPMGStepDefinitions.the_user_on_the_home_page()"
+              "arguments": [
+                {
+                  "val": "\"John Lewis \u0026 Partners | Homeware, Fashion, Electricals \u0026 More\"",
+                  "offset": 35
+                }
+              ],
+              "location": "KPMGStepDefinitions.theUserAbleToSeePageTitleAs(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 804412112,
+              "duration": 877114701,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "the user clicks sign in buttton",
             "match": {
               "location": "KPMGStepDefinitions.the_user_clicks_sign_in_buttton()"
@@ -47,22 +53,28 @@
           },
           {
             "result": {
-              "duration": 84494895,
+              "duration": 122037774,
               "status": "passed"
             },
-            "line": 7,
-            "name": "the user is on the sign in page",
+            "line": 8,
+            "name": "the user able to see the sign in page subtitle as \"SIGN IN\"",
             "match": {
-              "location": "KPMGStepDefinitions.the_user_is_on_the_sign_in_page()"
+              "arguments": [
+                {
+                  "val": "\"SIGN IN\"",
+                  "offset": 50
+                }
+              ],
+              "location": "KPMGStepDefinitions.theUserAbleToSeeTheSignInPageSubtitleAs(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 413409669,
+              "duration": 461268899,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "fills credentials and clicks on the create an account button",
             "match": {
               "location": "KPMGStepDefinitions.clicks_on_the_create_an_account_button()"
@@ -71,10 +83,10 @@
           },
           {
             "result": {
-              "duration": 46249900,
+              "duration": 35023613,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "the user navigate to create an account page",
             "match": {
               "location": "KPMGStepDefinitions.theUserNavigateToCreateAnAccountPage()"
@@ -83,10 +95,10 @@
           },
           {
             "result": {
-              "duration": 363867986,
+              "duration": 405843840,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "the user selects the subscribe to all button",
             "match": {
               "location": "KPMGStepDefinitions.the_user_selects_the_subscribe_to_all_button()"
@@ -95,10 +107,10 @@
           },
           {
             "result": {
-              "duration": 41475314,
+              "duration": 52847292,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "then the user clicks create account button",
             "match": {
               "location": "KPMGStepDefinitions.then_the_user_clicks_create_account_button()"
@@ -107,67 +119,40 @@
           },
           {
             "result": {
-              "duration": 5056112577,
+              "duration": 5038782233,
               "status": "passed"
             },
-            "line": 12,
-            "name": "the user navigate to account created page",
+            "line": 13,
+            "name": "the user navigate to account created page and see page subtitle as \"ACCOUNT CREATED\"",
             "match": {
-              "location": "KPMGStepDefinitions.the_user_navigate_to_account_created_page()"
+              "arguments": [
+                {
+                  "val": "\"ACCOUNT CREATED\"",
+                  "offset": 67
+                }
+              ],
+              "location": "KPMGStepDefinitions.theUserNavigateToAccountCreatedPageAndSeePageSubtitleAs(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 96184555,
+              "duration": 102680114,
               "status": "passed"
             },
-            "line": 13,
+            "line": 14,
             "name": "clicks joinn for free button",
             "match": {
               "location": "KPMGStepDefinitions.clicks_joinn_for_free_button()"
             },
             "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-05T10:05:41.246Z",
-        "before": [
+          },
           {
             "result": {
-              "duration": 3022783289,
+              "duration": 1137891344,
               "status": "passed"
             },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Positive scenario",
-        "description": "",
-        "id": "kpmg-scenarios;positive-scenario",
-        "after": [
-          {
-            "result": {
-              "duration": 208359336,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1026088270,
-              "status": "passed"
-            },
-            "line": 17,
+            "line": 15,
             "name": "the user insert all valid information on the form",
             "match": {
               "location": "KPMGStepDefinitions.the_user_insert_all_valid_information_on_the_form()"
@@ -176,10 +161,10 @@
           },
           {
             "result": {
-              "duration": 73975295,
+              "duration": 81741907,
               "status": "passed"
             },
-            "line": 18,
+            "line": 16,
             "name": "clicks I agree button",
             "match": {
               "location": "KPMGStepDefinitions.clicks_I_agree_button()"
@@ -188,10 +173,10 @@
           },
           {
             "result": {
-              "duration": 67793275,
+              "duration": 50729594,
               "status": "passed"
             },
-            "line": 19,
+            "line": 17,
             "name": "the user clicks join for free button",
             "match": {
               "location": "KPMGStepDefinitions.the_user_clicks_join_for_free_button()"
@@ -200,22 +185,28 @@
           },
           {
             "result": {
-              "duration": 5044738540,
+              "duration": 5056565046,
               "status": "passed"
             },
-            "line": 20,
-            "name": "the user navigate to welcome page",
+            "line": 18,
+            "name": "the user navigate to welcome page and see page subtitle as \"WELCOME\"",
             "match": {
-              "location": "KPMGStepDefinitions.the_user_navigate_to_welcome_page()"
+              "arguments": [
+                {
+                  "val": "\"WELCOME\"",
+                  "offset": 59
+                }
+              ],
+              "location": "KPMGStepDefinitions.theUserNavigateToWelcomePageAndSeePageSubtitleAs(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 914045630,
+              "duration": 739289531,
               "status": "passed"
             },
-            "line": 21,
+            "line": 19,
             "name": "clicks start shopping button",
             "match": {
               "location": "KPMGStepDefinitions.clicks_start_shopping_button()"
@@ -224,27 +215,66 @@
           },
           {
             "result": {
-              "duration": 40098692,
+              "duration": 10863332,
               "status": "passed"
             },
-            "line": 22,
-            "name": "the user reach to main products page",
-            "match": {
-              "location": "KPMGStepDefinitions.the_user_reach_to_main_products_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 173149543,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "hover to \"Beauty\" module",
+            "line": 20,
+            "name": "the user able to see page title as \"John Lewis \u0026 Partners | Homeware, Fashion, Electricals \u0026 More\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Beauty\"",
+                  "val": "\"John Lewis \u0026 Partners | Homeware, Fashion, Electricals \u0026 More\"",
+                  "offset": 35
+                }
+              ],
+              "location": "KPMGStepDefinitions.theUserAbleToSeePageTitleAs(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-07T21:16:51.802Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3624480648,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Positive scenario one",
+        "description": "",
+        "id": "kpmg-scenarios;positive-scenario-one;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 215054432,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 186456552,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "hover to \"Electricals\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Electricals\"",
                   "offset": 9
                 }
               ],
@@ -254,59 +284,83 @@
           },
           {
             "result": {
-              "duration": 4516198820,
+              "duration": 4704625021,
               "status": "passed"
             },
             "line": 24,
-            "name": "the user selects for shampoo product",
+            "name": "the user selects for \"Kettles\" product",
             "match": {
-              "location": "KPMGStepDefinitions.the_user_selects_for_shampoo_product()"
+              "arguments": [
+                {
+                  "val": "\"Kettles\"",
+                  "offset": 21
+                }
+              ],
+              "location": "KPMGStepDefinitions.the_user_selects_for_product(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 161573059,
+              "duration": 36308306,
               "status": "passed"
             },
             "line": 25,
-            "name": "then the user navigates to shampoo page",
+            "name": "then the user navigates to shampoo page and see the part of page subtitle as \"KETTLES\"",
             "match": {
-              "location": "KPMGStepDefinitions.then_the_user_navigates_to_shampoo_page()"
+              "arguments": [
+                {
+                  "val": "\"KETTLES\"",
+                  "offset": 77
+                }
+              ],
+              "location": "KPMGStepDefinitions.thenTheUserNavigatesToShampooPageAndSeePageSubtitleAs(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 794504300,
+              "duration": 1185854076,
               "status": "passed"
             },
             "line": 26,
-            "name": "the user clicks Aveda Shampure",
+            "name": "the user clicks particular product\u0027s name start with \"Dualit Dom\"",
             "match": {
-              "location": "KPMGStepDefinitions.the_user_clicks_Aveda_Shampure()"
+              "arguments": [
+                {
+                  "val": "\"Dualit Dom\"",
+                  "offset": 53
+                }
+              ],
+              "location": "KPMGStepDefinitions.the_user_clicks_Particular_Product_start_with(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 72680329,
+              "duration": 32783015,
               "status": "passed"
             },
             "line": 27,
-            "name": "reaching to quantity page",
+            "name": "reaches the quantity page named \"Dualit Dome Kettle, Black/Steel\"",
             "match": {
-              "location": "KPMGStepDefinitions.reaching_to_quantity_page()"
+              "arguments": [
+                {
+                  "val": "\"Dualit Dome Kettle, Black/Steel\"",
+                  "offset": 32
+                }
+              ],
+              "location": "KPMGStepDefinitions.reachesTheQuantityPageNamed(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 47312872,
+              "duration": 10023893066,
               "status": "passed"
             },
             "line": 28,
-            "name": "the user select size for aveda shapure",
+            "name": "the user select size for product",
             "match": {
               "location": "KPMGStepDefinitions.the_user_select_size_for_aveda_shapure()"
             },
@@ -314,7 +368,7 @@
           },
           {
             "result": {
-              "duration": 111540437,
+              "duration": 94369485,
               "status": "passed"
             },
             "line": 29,
@@ -326,7 +380,7 @@
           },
           {
             "result": {
-              "duration": 167367342,
+              "duration": 59890267,
               "status": "passed"
             },
             "line": 30,
@@ -338,7 +392,7 @@
           },
           {
             "result": {
-              "duration": 2525047181,
+              "duration": 2502740562,
               "status": "passed"
             },
             "line": 31,
@@ -350,19 +404,25 @@
           },
           {
             "result": {
-              "duration": 48296380,
+              "duration": 98353240,
               "status": "passed"
             },
             "line": 32,
-            "name": "finally the user reach to basket page",
+            "name": "finally the user reach to basket page and see page subtitle as \"BASKET\"",
             "match": {
-              "location": "KPMGStepDefinitions.finally_the_user_reach_to_basket_page()"
+              "arguments": [
+                {
+                  "val": "\"BASKET\"",
+                  "offset": 63
+                }
+              ],
+              "location": "KPMGStepDefinitions.finallyTheUserReachToBasketPageAndSeePageSubtitleAs(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 111377852,
+              "duration": 125809546,
               "status": "passed"
             },
             "line": 33,
@@ -374,7 +434,7 @@
           },
           {
             "result": {
-              "duration": 883374709,
+              "duration": 847599783,
               "status": "passed"
             },
             "line": 34,
@@ -397,6 +457,15 @@
     "id": "kpmg-scenarios",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/kpmg.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@kpmg",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

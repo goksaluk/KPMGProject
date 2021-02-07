@@ -19,7 +19,11 @@ public class Hooks {
         Driver.get().get(ConfigurationReader.get("url"));
     }
 
-
+    /**
+     * If scenario is failed this method create a screenshoot.
+     *
+     * @param scenario
+     */
     @After
     public void tearDown(Scenario scenario){
         if (scenario.isFailed()){

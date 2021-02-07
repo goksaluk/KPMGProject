@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>06 Feb 2021, 23:38</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">Hooks.setUp()</td>
+              <td>1</td>
+              <td class="duration" data-value="3793864231">3.793</td>
+              <td class="duration" data-value="3793864231">3.793</td>
+              <td class="duration" data-value="3793864231">3.793</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Hooks.tearDown(Scenario)</td>
+              <td>1</td>
+              <td class="duration" data-value="702232370">0.702</td>
+              <td class="duration" data-value="702232370">0.702</td>
+              <td class="duration" data-value="702232370">0.702</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.adds_to_his_her_basket()</td>
+              <td>1</td>
+              <td class="duration" data-value="2155">0.000</td>
+              <td class="duration" data-value="2155">0.000</td>
+              <td class="duration" data-value="2155">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.but_the_user_remove_this_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="1927">0.000</td>
+              <td class="duration" data-value="1927">0.000</td>
+              <td class="duration" data-value="1927">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.clicks_I_agree_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="79916543">0.079</td>
+              <td class="duration" data-value="79916543">0.079</td>
+              <td class="duration" data-value="79916543">0.079</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.clicks_joinn_for_free_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="102802053">0.102</td>
+              <td class="duration" data-value="102802053">0.102</td>
+              <td class="duration" data-value="102802053">0.102</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.clicks_on_the_create_an_account_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="421076936">0.421</td>
+              <td class="duration" data-value="421076936">0.421</td>
+              <td class="duration" data-value="421076936">0.421</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.clicks_plus_sign()</td>
+              <td>1</td>
+              <td class="duration" data-value="2373">0.000</td>
+              <td class="duration" data-value="2373">0.000</td>
+              <td class="duration" data-value="2373">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.clicks_start_shopping_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="6598">0.000</td>
+              <td class="duration" data-value="6598">0.000</td>
+              <td class="duration" data-value="6598">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.finallyTheUserReachToBasketPageAndSeePageSubtitleAs(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2202">0.000</td>
+              <td class="duration" data-value="2202">0.000</td>
+              <td class="duration" data-value="2202">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.goes_to_his_her_basket()</td>
+              <td>1</td>
+              <td class="duration" data-value="2119">0.000</td>
+              <td class="duration" data-value="2119">0.000</td>
+              <td class="duration" data-value="2119">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.hover_to_module(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3579">0.000</td>
+              <td class="duration" data-value="3579">0.000</td>
+              <td class="duration" data-value="3579">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.reaching_to_quantity_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="2991">0.000</td>
+              <td class="duration" data-value="2991">0.000</td>
+              <td class="duration" data-value="2991">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.theUserAbleToSeePageTitleAs(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="8096517">0.008</td>
+              <td class="duration" data-value="8096517">0.016</td>
+              <td class="duration" data-value="16193035">0.016</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.theUserAbleToSeeThatBasketIsEmpty()</td>
+              <td>1</td>
+              <td class="duration" data-value="1922">0.000</td>
+              <td class="duration" data-value="1922">0.000</td>
+              <td class="duration" data-value="1922">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.theUserAbleToSeeTheSignInPageSubtitleAs(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="99963447">0.099</td>
+              <td class="duration" data-value="99963447">0.099</td>
+              <td class="duration" data-value="99963447">0.099</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.theUserNavigateToAccountCreatedPageAndSeePageSubtitleAs(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5039017492">5.039</td>
+              <td class="duration" data-value="5039017492">5.039</td>
+              <td class="duration" data-value="5039017492">5.039</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.theUserNavigateToCreateAnAccountPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="40918524">0.040</td>
+              <td class="duration" data-value="40918524">0.040</td>
+              <td class="duration" data-value="40918524">0.040</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.theUserNavigateToWelcomePageAndSeePageSubtitleAs(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5036599920">5.036</td>
+              <td class="duration" data-value="5036599920">5.036</td>
+              <td class="duration" data-value="5036599920">5.036</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.the_user_allows_all_cokies()</td>
+              <td>1</td>
+              <td class="duration" data-value="356633316">0.356</td>
+              <td class="duration" data-value="356633316">0.356</td>
+              <td class="duration" data-value="356633316">0.356</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.the_user_clicks_Aveda_Shampure()</td>
+              <td>1</td>
+              <td class="duration" data-value="4414">0.000</td>
+              <td class="duration" data-value="4414">0.000</td>
+              <td class="duration" data-value="4414">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.the_user_clicks_join_for_free_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="67126187">0.067</td>
+              <td class="duration" data-value="67126187">0.067</td>
+              <td class="duration" data-value="67126187">0.067</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.the_user_clicks_sign_in_buttton()</td>
+              <td>1</td>
+              <td class="duration" data-value="967006334">0.967</td>
+              <td class="duration" data-value="967006334">0.967</td>
+              <td class="duration" data-value="967006334">0.967</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.the_user_insert_all_valid_information_on_the_form()</td>
+              <td>1</td>
+              <td class="duration" data-value="1081149428">1.081</td>
+              <td class="duration" data-value="1081149428">1.081</td>
+              <td class="duration" data-value="1081149428">1.081</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.the_user_select_size_for_aveda_shapure()</td>
+              <td>1</td>
+              <td class="duration" data-value="11701">0.000</td>
+              <td class="duration" data-value="11701">0.000</td>
+              <td class="duration" data-value="11701">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.the_user_selects_for_shampoo_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="3159">0.000</td>
+              <td class="duration" data-value="3159">0.000</td>
+              <td class="duration" data-value="3159">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.the_user_selects_the_subscribe_to_all_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="351773902">0.351</td>
+              <td class="duration" data-value="351773902">0.351</td>
+              <td class="duration" data-value="351773902">0.351</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.thenTheUserNavigatesToShampooPageAndSeePageSubtitleAs(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3032">0.000</td>
+              <td class="duration" data-value="3032">0.000</td>
+              <td class="duration" data-value="3032">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">KPMGStepDefinitions.then_the_user_clicks_create_account_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="50189337">0.050</td>
+              <td class="duration" data-value="50189337">0.050</td>
+              <td class="duration" data-value="50189337">0.050</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>29</td>
+            <td>30</td>
+            <td class="duration">0.606</td>
+            <td class="duration">5.039</td>
+            <td class="duration">18.206</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
